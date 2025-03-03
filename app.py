@@ -11,5 +11,5 @@ redis = FlaskRedis(app)
 
 @app.route('/')
 def counter():
-    return '{0} {1}'.format(str(redis.incr('web2_counter hehe')),
+    return '{0} {1}'.format(str(redis.incr('web2_counter hfehe')),
                             os.getenv('WEB2_COUNTER_MSG', ''))
